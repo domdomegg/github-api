@@ -105,6 +105,17 @@ public class GHContentSearchBuilder extends GHSearchBuilder<GHContent> {
     public GHContentSearchBuilder user(String v) {
         return q("user:" + v);
     }
+    
+    /**
+     * Organization gh content search builder.
+     *
+     * @param v
+     *            the v
+     * @return the gh content search builder
+     */
+    public GHContentSearchBuilder org(String v) {
+        return q("org:" + v);
+    }
 
     /**
      * Repo gh content search builder.
